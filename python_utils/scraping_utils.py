@@ -7,4 +7,4 @@ def scrape_xpath(response, xpath):
 
 
 def get_full_urls(root_url, urls):
-    return [root_url + url for url in urls]
+    return [root_url + url for url in urls if url != '']

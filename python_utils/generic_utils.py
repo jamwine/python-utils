@@ -11,3 +11,13 @@ def save_output_in_json(output_file_path, data, data_description = ''):
         print(f"JSON file '{output_file_path}' saved successfully!\n")
     except Exception as exc:
         print(f"!! Failed to save JSON file '{output_file_path}'. !!\n", exc)
+
+
+def load_json_file(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+            print(f"JSON file '{file_path}' loaded successfully!\n")
+    except Exception as exc:
+        print(f"!! Failed to load JSON file '{file_path}'. !!\n", exc)
+    return data
