@@ -18,6 +18,7 @@ def load_json_file(file_path):
         with open(file_path, 'r') as file:
             data = json.load(file)
             print(f"JSON file '{file_path}' loaded successfully!\n")
+            return data
     except Exception as exc:
         print(f"!! Failed to load JSON file '{file_path}'. !!\n", exc)
-    return data
+    
