@@ -4,8 +4,7 @@
 
 Made with [python-cookiecutter](https://github.com/jamwine/python-cookiecutter)
 
-
 # python-utils
 
 * **Package**: python_utils
-* **Description**: A Python package that includes custom Python utils
+* **Description**: A Python package that includes custom Python util functions
