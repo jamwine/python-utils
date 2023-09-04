@@ -65,7 +65,7 @@ def load_json_file(file_path):
         raise FileNotFoundError(f"JSON file not found: {file_path}")
 
     try:
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r', encoding='utf-8-sig') as file:
             data = json.load(file)
             print(f"JSON file '{file_path}' loaded successfully!\n")
             return data

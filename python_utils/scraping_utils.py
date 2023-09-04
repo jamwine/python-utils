@@ -86,6 +86,5 @@ def extract_urls_from_xpath(response, xpath, root_url):
         root_url = 'https://example.com/'
         urls = extract_urls_from_xpath(response, xpath, root_url)
     """
-    data = scrape_xpath(response, xpath)
-    data = set(get_full_urls(root_url, data))
-    return data
+    urls = scrape_xpath(response, xpath)
+    return set(get_full_urls(root_url, urls)) if urls else None
